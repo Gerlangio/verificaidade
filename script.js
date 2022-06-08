@@ -47,6 +47,10 @@ function verificar() {
             }
         }
         res.style.textAlign = 'center';
-        res.innerHTML = `Detectamos ${genero} com ${idade} anos`;
+        if (idade <= 1) {
+            res.innerHTML = `Detectamos ${genero} com ${idade} ano`;
+        } else {
+            res.innerHTML = `Detectamos ${genero} com ${idade} anos`;
+        }  
     }
 }
