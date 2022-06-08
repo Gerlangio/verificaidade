@@ -25,7 +25,8 @@ function verificar() {
                 //window.alert("É uma criança!");
             } else if (idade < 21) {
                 //JOVEM
-                window.alert("É um jovem!");
+                img.setAttribute("src", "foto-jovem-h.png");
+                //window.alert("É um jovem!");
             } else if (idade < 50) {
                 //ADULTO
                 img.setAttribute("src", "foto-adulto-h.png");
