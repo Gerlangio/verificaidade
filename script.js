@@ -41,7 +41,8 @@ function verificar() {
                 window.alert("É uma criança!");
             } else if (idade < 21) {
                 //JOVEM
-                window.alert("É uma jovem!");
+                img.setAttribute("src", "foto-jovem-m.png");
+                //window.alert("É uma jovem!");
             } else if (idade < 50) {
                 //ADULTO
                 img.setAttribute("src", "foto-adulta-m.png");
