@@ -28,7 +28,8 @@ function verificar() {
                 window.alert("É um jovem!");
             } else if (idade < 50) {
                 //ADULTO
-                window.alert("É um adulto!");
+                img.setAttribute("src", "foto-adulto-h.png");
+                //window.alert("É um adulto!");
             } else {
                 //IDOSO
                 window.alert("É um idoso!");
