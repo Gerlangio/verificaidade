@@ -32,6 +32,19 @@ function verificar() {
             }
         } else if (fsex[1].checked) {
             genero = "Mulher";
+            if (idade >= 0 && idade < 10) {
+                //CRIANÇA
+                window.alert("É uma criança!");
+            } else if (idade < 21) {
+                //JOVEM
+                window.alert("É uma jovem!");
+            } else if (idade < 50) {
+                //ADULTO
+                window.alert("É uma adulta!");
+            } else {
+                //IDOSO
+                window.alert("É uma idosa!");
+            }
         }
         res.style.textAlign = 'center';
         res.innerHTML = `Detectamos ${genero} com ${idade} anos`;
