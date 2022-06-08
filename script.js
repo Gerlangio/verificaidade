@@ -15,11 +15,14 @@ function verificar() {
         var idade = ano - Number(fano.value);
         /*res.innerHTML = `Idade calculada ${idade}`;*/
         var genero = "";
+        var img = window.document.createElement("img");
+        img.setAttribute("id", "foto");
         if (fsex[0].checked) {
             genero = "Homem";
             if (idade >= 0 && idade < 10) {
                 //CRIANÇA
-                window.alert("É uma criança!");
+                img.setAttribute("src", "foto-crianca-f.png");
+                //window.alert("É uma criança!");
             } else if (idade < 21) {
                 //JOVEM
                 window.alert("É um jovem!");
@@ -51,6 +54,7 @@ function verificar() {
             res.innerHTML = `Detectamos ${genero} com ${idade} ano`;
         } else {
             res.innerHTML = `Detectamos ${genero} com ${idade} anos`;
-        }  
+        }
+        res.appendChild(img)
     }
 }
