@@ -21,7 +21,7 @@ function verificar() {
             genero = "Homem";
             if (idade >= 0 && idade < 10) {
                 //CRIANÇA
-                img.setAttribute("src", "foto-crianca-f.png");
+                img.setAttribute("src", "foto-crianca-h.png");
                 //window.alert("É uma criança!");
             } else if (idade < 21) {
                 //JOVEM
@@ -39,7 +39,7 @@ function verificar() {
             genero = "Mulher";
             if (idade >= 0 && idade < 10) {
                 //CRIANÇA
-                img.setAttribute("src", "foto-crianca-h.png");
+                img.setAttribute("src", "foto-crianca-f.png");
                 //window.alert("É uma criança!");
             } else if (idade < 21) {
                 //JOVEM
