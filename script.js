@@ -33,7 +33,8 @@ function verificar() {
                 //window.alert("É um adulto!");
             } else {
                 //IDOSO
-                window.alert("É um idoso!");
+                img.setAttribute("src", "foto-idoso-h.png");
+                //window.alert("É um idoso!");
             }
         } else if (fsex[1].checked) {
             genero = "Mulher";
@@ -51,7 +52,8 @@ function verificar() {
                 //window.alert("É uma adulta!");
             } else {
                 //IDOSO
-                window.alert("É uma idosa!");
+                img.setAttribute("src", "foto-idosa-m.png")
+                //window.alert("É uma idosa!");
             }
         }
         res.style.textAlign = 'center';
