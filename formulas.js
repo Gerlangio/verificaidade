@@ -36,16 +36,23 @@ console.log('FIM')
 
 //Arrays ou Vetores
 let num = [5,4,8];
-//coloque o numero 6 na posição 3
+console.log('Mostra o número de posições do vetor');
+console.log(num);
+console.log('coloque o numero 6 na posição 3');
 num[3]=6;
 console.log(num);
-//coloque na última posição o número 7
+console.log('coloque na última posição o número 7');
 num.push(7);
 console.log(num);
 //mostra quantas posições tem o vetor
 console.log(`O vetor tem ${num.length} posições`);
-//console.log(num)
+//...
+console.log('Coloca o vetor em ordem entre cochetes');
 num.sort();
 console.log(num);
+//...
+console.log('Coloca em ordem fora dos cochetes');
 console.log(`${num}`);
-//ou com cochetes[]
+//...
+console.log('Mostra o número e sua posição')
+console.log(`Na primeira posição valor do vetor é ${num[0]}`);
